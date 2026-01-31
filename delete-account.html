@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supprimer mon compte - TotorSwipe</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0f0f1a;
+            color: #e0e0e0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 600px;
+            width: 100%;
+        }
+        h1 {
+            color: #fff;
+            font-size: 1.8rem;
+            margin-bottom: 8px;
+        }
+        .subtitle {
+            color: #888;
+            margin-bottom: 32px;
+        }
+        .section {
+            background: #1a1a2e;
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 20px;
+        }
+        .section h2 {
+            color: #fff;
+            font-size: 1.1rem;
+            margin-bottom: 12px;
+        }
+        .section p, .section li {
+            color: #aaa;
+            line-height: 1.6;
+        }
+        .section ul {
+            padding-left: 20px;
+            margin-top: 8px;
+        }
+        .section ul li { margin-bottom: 6px; }
+        .warning {
+            background: #2e1a1a;
+            border-left: 3px solid #e74c3c;
+        }
+        .steps {
+            counter-reset: step;
+            list-style: none;
+            padding-left: 0;
+        }
+        .steps li {
+            counter-increment: step;
+            padding-left: 32px;
+            position: relative;
+            margin-bottom: 12px;
+        }
+        .steps li::before {
+            content: counter(step);
+            position: absolute;
+            left: 0;
+            width: 22px;
+            height: 22px;
+            background: #6c5ce7;
+            color: #fff;
+            border-radius: 50%;
+            font-size: 0.8rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .contact-link {
+            display: inline-block;
+            background: #6c5ce7;
+            color: #fff;
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: 600;
+            margin-top: 12px;
+        }
+        .contact-link:hover { background: #5a4bd1; }
+        .footer {
+            text-align: center;
+            color: #555;
+            margin-top: 32px;
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Supprimer mon compte</h1>
+        <p class="subtitle">TotorSwipe — Suppression de compte et des donn&#233;es associ&#233;es</p>
+
+        <div class="section">
+            <h2>Comment supprimer mon compte ?</h2>
+            <p>Vous pouvez supprimer votre compte de deux mani&#232;res :</p>
+            <ol class="steps">
+                <li>Directement dans l'application : allez dans <strong>Profil &gt; Supprimer mon compte</strong></li>
+                <li>Par email : envoyez une demande &#224; l'adresse ci-dessous en pr&#233;cisant l'adresse email associ&#233;e &#224; votre compte</li>
+            </ol>
+        </div>
+
+        <div class="section warning">
+            <h2>Donn&#233;es supprim&#233;es</h2>
+            <p>La suppression de votre compte entra&#238;ne la suppression d&#233;finitive de :</p>
+            <ul>
+                <li>Votre adresse email et nom d'utilisateur</li>
+                <li>Votre progression d'apprentissage (&#233;toiles, historique)</li>
+                <li>Vos statistiques de swipe</li>
+                <li>Vos cartes personnalis&#233;es (Souvenirs)</li>
+                <li>Toutes les donn&#233;es synchronis&#233;es sur nos serveurs</li>
+            </ul>
+            <p style="margin-top: 12px;"><strong>Cette action est irr&#233;versible.</strong> Vos donn&#233;es seront supprim&#233;es dans un d&#233;lai de 30 jours maximum.</p>
+        </div>
+
+        <div class="section">
+            <h2>Demander la suppression par email</h2>
+            <p>Envoyez un email avec l'objet <strong>&#171; Suppression de compte &#187;</strong> en pr&#233;cisant l'adresse email de votre compte TotorSwipe.</p>
+            <a class="contact-link" href="mailto:acquims@protonmail.com?subject=Suppression%20de%20compte%20TotorSwipe">acquims@protonmail.com</a>
+        </div>
+
+        <p class="footer">TotorSwipe &#169; 2026</p>
+    </div>
+</body>
+</html>
